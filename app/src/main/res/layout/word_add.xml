@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/icon_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单词:"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/addword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@id/icon_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/icon_meaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="释义:"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@id/addmeaning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_word" />
+
+    <EditText
+        android:id="@+id/addmeaning"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/icon_meaning"
+        app:layout_constraintTop_toBottomOf="@id/addword"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/icon_sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="例句:"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_meaning" />
+
+    <EditText
+        android:id="@+id/addsample"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/addmeaning"
+        app:layout_constraintStart_toEndOf="@id/icon_sample"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
